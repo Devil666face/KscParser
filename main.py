@@ -104,7 +104,7 @@ def main():
     # server = get_ksc_server(username='kladmin', password='ghjcdtfub65D', server_port=13299)
     # host_name_list = FindHostsByQueryString(server, "")
     # print(len(host_name_list))
-    server = KscParser(username='kladmin', password='ghjcdtfub65D', server_port=13299, find_cert=False)
+    server = KscParser(username='', password='', server_port=13299, find_cert=False)
     hosts = server.find_hosts_by_query("")
     print(len(hosts))
     server.save_in_csv(table_name='host',data=hosts)
